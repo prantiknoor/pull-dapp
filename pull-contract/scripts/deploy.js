@@ -17,22 +17,10 @@ async function main() {
   const PullContract = await hre.ethers.getContractFactory("PullContract");
   const pullContract = await PullContract.deploy();
 
-  // await greeter.deployed();
+  await pullContract.deployed();
 
   console.log("PullContract deployed to:", pullContract.address);
-
-  const createPullTx = await pullContract.createPull(
-    "ABC",
-    ["a", "b", "c"],
-    1234567,
-    { value: hre.ethers.utils.parseEther("0.2") }
-  );
-
-  await createPullTx.wait();
-
-  console.log((await pullContract.pulls(0)));
-
-  console.log(await pullContract.getVotesByOption(0));
+  console.log("PullContract owner address:", await pullContract.getOwner())
 }
 
 // We recommend this pattern to be able to use async/await everywhere
