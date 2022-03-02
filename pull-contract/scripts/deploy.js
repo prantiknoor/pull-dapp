@@ -32,7 +32,7 @@ async function main() {
 
   console.log((await pullContract.pulls(0)));
 
-  console.log(await pullContract.didIVote(0));
+  console.log(await pullContract.getVotesByOption(0));
 }
 
 // We recommend this pattern to be able to use async/await everywhere
