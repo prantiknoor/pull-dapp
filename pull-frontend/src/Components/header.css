@@ -1,0 +1,21 @@
+nav {
+  height: 60px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#logo {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.div-header {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

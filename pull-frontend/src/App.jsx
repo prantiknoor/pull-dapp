@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import {ethers, utils} from 'ethers';
 import abi from './contracts/PullContract.json';
+import Header from './Components/Header';
 
 function App() {
   const [isOwner, setIsOwner] = useState(false);
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Header></Header>
     </div>
   );
 }
