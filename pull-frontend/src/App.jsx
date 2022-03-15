@@ -2,6 +2,8 @@ import {useState, useEffect} from 'react';
 import {ethers, utils} from 'ethers';
 import abi from './contracts/PullContract.json';
 import Header from './Components/Header';
+import PullCard from './Components/PullCard';
+import CreatePull from './Components/CreatePull'
 
 function App() {
   const [isOwner, setIsOwner] = useState(false);
@@ -13,6 +15,8 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+{/* <CreatePull></CreatePull> */}
+<PullCard></PullCard>
     </div>
   );
 }

@@ -1,0 +1,51 @@
+.pull-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+.pull-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+p {
+    margin: 10px 2px;
+}
+
+.duration-input {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.dur-input {
+    margin-left: 18px;
+    margin-right: 6px;
+}
+
+input {
+  border: 1px solid #232d3c;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  height: 36px;
+  background-color: transparent;
+  padding: 0 10px;
+  color: white;
+  width: 100%;
+}
+
+#pull-charge {
+    margin-top: 30px;
+}
+
+#add-button {
+    border: none;
+    color: #3730A3;
+    background-color: transparent;
+    text-align: left;
+}
